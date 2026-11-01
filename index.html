@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Gnostic Map — Free Will After Death, in Simple Words</title>
+<meta name="description" content="What the Gnostics taught about the soul's journey after death and free will, explained simply with pictures and an interactive map.">
+<meta property="og:title" content="The Gnostic Map">
+<meta property="og:description" content="Is there free will after death? The Gnostic answer, in simple words, with an interactive journey map.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brittanynation.github.io/gnostic-map/">
+<meta property="og:image" content="https://brittanynation.github.io/gnostic-map/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --night:#1B1035; --deep:#241447; --violet:#7C5CBF; --lilac:#B79CED;
+    --gold:#F5C04E; --spark:#FFD97A; --teal:#2EC4B6; --cream:#FBF6EC;
+    --rose:#EF7A9B; --stone:#9A8FA8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--night);color:var(--cream);font-family:Verdana,Geneva,sans-serif;line-height:1.65}
+  .wrap{max-width:880px;margin:0 auto;padding:24px 18px 64px}
+  header{text-align:center;padding:28px 0 8px}
+  h1{font-family:Georgia,'Times New Roman',serif;font-size:2.4rem;color:var(--spark);letter-spacing:.5px}
+  .sub{color:var(--lilac);font-size:1.05rem;margin-top:6px}
+  .hero{display:block;width:min(420px,90%);margin:22px auto;border-radius:18px;box-shadow:0 12px 44px rgba(0,0,0,.55)}
+  section{background:var(--deep);border:1px solid rgba(183,156,237,.25);border-radius:18px;padding:26px 24px;margin:26px 0}
+  h2{font-family:Georgia,serif;color:var(--gold);font-size:1.5rem;margin-bottom:12px}
+  .big{font-size:1.2rem}
+  .gold{color:var(--spark)} .teal{color:var(--teal)} .rose{color:var(--rose)}
+  /* three kinds */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+  .card{background:#2D1B57;border:2px solid transparent;border-radius:14px;padding:18px;cursor:pointer;text-align:left;color:var(--cream);font-family:inherit;font-size:1rem;width:100%}
+  .card:hover{border-color:var(--violet)}
+  .card.active{border-color:var(--gold);background:#37236B}
+  .card .icon{font-size:2rem;display:block;margin-bottom:6px}
+  .card b{color:var(--spark);display:block;font-size:1.08rem;margin-bottom:4px}
+  .card small{color:var(--lilac);line-height:1.45;display:block}
+  /* journey */
+  .journey{margin-top:18px;display:flex;flex-direction:column-reverse;gap:10px}
+  .step{display:flex;gap:14px;align-items:flex-start;background:#2D1B57;border-radius:12px;padding:13px 16px;border-left:6px solid var(--violet);opacity:.38;transition:opacity .3s,border-color .3s}
+  .step.on{opacity:1;border-left-color:var(--gold)}
+  .step .dot{font-size:1.5rem;line-height:1.2}
+  .step b{color:var(--spark)}
+  .step p{color:#E9E2F5}
+  .dest{border:1px dashed rgba(245,192,78,.5);border-radius:12px;padding:14px 16px;margin-top:14px;display:none}
+  .dest.show{display:block}
+  .dest b{color:var(--gold)}
+  /* dials */
+  .dials{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:14px}
+  .dial{background:#2D1B57;border-radius:14px;padding:18px;text-align:center}
+  .dial .face{font-size:2.2rem}
+  .dial b{display:block;color:var(--spark);margin:8px 0 4px}
+  .dial p{color:#E9E2F5;font-size:.95rem}
+  .summary{background:linear-gradient(135deg,#37236B,#241447);border:1px solid var(--gold)}
+  footer{text-align:center;color:var(--stone);font-size:.85rem;padding:18px 0 0}
+  footer .texts{color:var(--lilac)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>✨ The Gnostic Map ✨</h1>
+    <p class="sub">Is there free will after death? The Gnostic answer, in simple words.</p>
+    <img class="hero" src="assets/ascent.png" alt="A small golden spark of light rising through seven starry gates toward a bright, kind light">
+  </header>
+
+  <section>
+    <h2>🌟 The whole idea in one breath</h2>
+    <p class="big">Inside every person there may be a tiny <span class="gold">spark of light</span> from the true God above. This world is like a dark house run by gatekeepers (the <b>Archons</b>) who want the sparks to stay asleep. <span class="gold">Knowing the truth — waking up — is called <i>gnosis</i>.</span> Death is the trip home. And on that trip, what saves you is not mostly your choices. It is <b>what you are</b> and <b>what you know</b>.</p>
+  </section>
+
+  <section>
+    <h2>👇 Pick a person, see their road</h2>
+    <p>The Gnostics said people come in three kinds. Tap one, then look at the journey below it.</p>
+    <div class="cards">
+      <button class="card" data-person="spark" onclick="pick('spark',this)">
+        <span class="icon">🔥</span>
+        <b>The Spark Person</b>
+        <small>Called a <i>pneumatic</i>. Carries the light inside, and wakes up to it in this life.</small>
+      </button>
+      <button class="card" data-person="soul" onclick="pick('soul',this)">
+        <span class="icon">⚖️</span>
+        <b>The Soul Person</b>
+        <small>Called a <i>psychic</i>. No spark of their own — but a real, choosing heart. This is the one with true free will.</small>
+      </button>
+      <button class="card" data-person="stone" onclick="pick('stone',this)">
+        <span class="icon">🪨</span>
+        <b>The Stone Person</b>
+        <small>Called a <i>hylic</i>. Lives only for the body and the world. Never looks up.</small>
+      </button>
+    </div>
+
+    <div class="journey" id="journey"><!-- steps injected --></div>
+    <div class="dest" id="dest"></div>
+  </section>
+
+  <section>
+    <h2>🧭 So… is there free will after death?</h2>
+    <div class="dials">
+      <div class="dial">
+        <div class="face">🌍</div>
+        <b>In this life: YES</b>
+        <p>Your choices are the steering wheel — above all for the Soul Person, who really can turn toward the light or away from it.</p>
+      </div>
+      <div class="dial">
+        <div class="face">🚪</div>
+        <b>On the road up: IT BECOMES KNOWLEDGE</b>
+        <p>At each gate, the gatekeepers ask who you are. Choosing stops mattering — <i>knowing</i> is the key that opens the doors.</p>
+      </div>
+      <div class="dial">
+        <div class="face">🏠</div>
+        <b>At Home: NO MORE CHOOSING</b>
+        <p>Not because you are forced — because the confusion is gone. At home in the Light (the <i>Pleroma</i>), you do not pick between light and dark. You just <i>know</i>, the way the sun does not choose to shine.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="summary">
+    <h2>💛 The simple summary</h2>
+    <p class="big">Free will is mostly a <b>this-life</b> thing, and it belongs most of all to the people in the middle. After death, the question quietly changes from <span class="gold">“what will you choose?”</span> to <span class="gold">“what do you know — and what are you made of?”</span> The spark goes home. The choosing soul is weighed by its choices and rests, or tries again. The stone returns to the earth it loved. And for the one who makes it all the way home, choosing ends — not in chains, but in daylight.</p>
+  </section>
+
+  <footer>
+    <p class="texts">Drawn from the old books: the Apocryphon of John · the Gospel of Philip · the Tripartite Tractate · the Apocalypse of Paul</p>
+    <p>A simple-words retelling — the schools argued the details for centuries. 🌼</p>
+  </footer>
+
+</div>
+
+<script>
+// Simple-words journeys for each kind of person.
+// Read from the ground up: Earth -> death -> the gates -> the end of the road.
+const JOURNEYS = {
+  spark: {
+    steps: [
+      {icon:"🌍", title:"On Earth", text:"The spark wakes up. Gnosis — the person remembers: “I am light, trapped in a dark house.”"},
+      {icon:"🕊️", title:"Death", text:"The body is left behind like an old coat. The spark starts to rise."},
+      {icon:"🚪", title:"The Seven Gates", text:"At each gate an Archon demands an answer. The spark speaks the names and passwords it learned — and every gate swings open."},
+      {icon:"⭐", title:"Past the Stars", text:"Nothing can hold it. Tricks, threats and fake heavens all fail, because it knows them for what they are."}
+    ],
+    dest:"🏠 <b>Home — the Pleroma, the Fullness of Light.</b> The spark returns to the true God it came from. No more choosing, no more forgetting. This road was never really in doubt — only asleep."
+  },
+  soul: {
+    steps: [
+      {icon:"🌍", title:"On Earth", text:"The choosing life. Every day the heart turns a little toward the light, or a little away. These choices are real, and they count."},
+      {icon:"🕊️", title:"Death", text:"The soul rises carrying the weight of its own choices — nothing else comes with it."},
+      {icon:"⚖️", title:"The Weighing", text:"The soul is measured by the life it chose. Faith and kindness pull it upward; cruelty and sleep pull it down."},
+      {icon:"🔄", title:"Two Doors", text:"It may be sent back into a new body for another chance — or, if it truly heard the call and turned, it may rest and be gathered in."}
+    ],
+    dest:"🌤️ <b>The Middle Rest — a good, quiet waiting place.</b> Not the full blaze of Home, but safe, and not the end of the story. Of the three kinds, this is the one whose free will mattered most."
+  },
+  stone: {
+    steps: [
+      {icon:"🌍", title:"On Earth", text:"A life aimed only at the body: eating, wanting, showing off, sleeping. The sky is never once looked at."},
+      {icon:"🕊️", title:"Death", text:"The body fails — and there is nothing else packed for the trip. No spark, no gathered soul."},
+      {icon:"🌫️", title:"The Dissolving", text:"What was only matter returns to matter, like a sandcastle at the tide line."}
+    ],
+    dest:"🪨 <b>Back to the earth it loved.</b> In the Gnostic telling this is the saddest road — not a punishment with fire, but a candle that was never lit, going out."
+  }
+};
+
+function pick(kind, btn){
+  document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  const j = JOURNEYS[kind];
+  const box = document.getElementById('journey');
+  box.innerHTML = j.steps.map(s =>
+    `<div class="step on"><div class="dot">${s.icon}</div><div><b>${s.title}</b><p>${s.text}</p></div></div>`
+  ).join('');
+  const d = document.getElementById('dest');
+  d.innerHTML = j.dest;
+  d.classList.add('show');
+  d.scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+// Start with the Spark Person selected, so the map is alive on first load.
+pick('spark', document.querySelector('[data-person="spark"]'));
+</script>
+</body>
+</html>
