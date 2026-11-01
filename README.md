@@ -3,6 +3,7 @@
 **Is there free will after death?** The Gnostic answer, retold in simple words — with a picture and an interactive map.
 
 **Live page:** https://brittanynation.github.io/gnostic-map/
+**Page 2 — The Passwords & The Two Gates:** https://brittanynation.github.io/gnostic-map/passwords.html — the seven gatekeepers by name (tap a gate to hear what the soul says), the Phrase, the three parts of the key (secret name, declaration, seal), the baptism names, the sun and moon as the male/life and female/death gates and ships of light, and the Mother who waits.
 
 ## What's on the page
 
